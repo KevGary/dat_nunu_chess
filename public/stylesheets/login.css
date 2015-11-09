@@ -1,0 +1,151 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.form-group {
+  margin-top: 10%;
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px black;
+  padding: 5%;
+}
+
+.logo {
+  background: none;
+}
+
+.row {
+  text-align: center;
+}
+
+.form-control {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+} 
+
+.title {
+  margin-bottom: 60px;
+  font-size: 48px;
+  font-style: bold;
+  color: black;
+}
+
+.password {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+/*.submit-btn {
+  background-color: black;
+  border: none;
+  color: #A8A8A8;
+  width: 40%;
+  height: 60px;
+  font-size: 24px;
+}*/
+
+/*.submit-btn:focus, .submit-btn:active {
+  outline: none !important;
+  background-color: black;
+  color: #A8A8A8;
+}
+.submit-btn:hover {
+  background-color: #005900;
+  color: #A8A8A8;
+  border: none;
+}*/
+
+.submit-btn {
+  width: 40%;
+  height: 56px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+  
+.btn-lg {
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #A8A8A8;
+  background-color: black;
+  border-color: #357ebd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: black;
+  background-color: black;
+  border-color: black;
+  color:  black;
+}
+
+/***********************
+  RAISED BUTTONS
+************************/
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #191919;;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #A8A8A8;
+    box-shadow: none;
+    color:  black;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.submit-btn {
+    border: 0 none;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+    color:  black;
+}
+
+.btn-primary {
+    background: black;
+    color:  #A8A8A8;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #A8A8A8;
+    color:  black;
+}
+.btn-primary:active, .btn-primary.active {
+    background: #A8A8A8;
+    box-shadow: none;
+    color:  black;
+}
+
+.social-btns {
+  margin-top: 5%;
+}
+
+.btn-social-icon {
+  width: 20%;
+}
+
+

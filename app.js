@@ -4,11 +4,16 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var cookieSession = require('cookie-session');
+var bcrypt = require('bcrypt');
+var http = require('http');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+var server = app.listen(4000);
+var io = require('socket.io').listen(server);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -20,6 +25,15 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(cookieSession({
+  name: 'session',
+  keys: [
+    "tempKEY1",
+    "tempKEY2",
+    "tempKEY3"
+  ]
+}));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);

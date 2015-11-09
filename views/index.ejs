@@ -2,10 +2,50 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/chessboard-0.3.0.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='/stylesheets/chess-game.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <!-- html content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3 info-container">
+        </div>
+        <div class="col-xs-6 board-wrapper">
+          <div class="board" id="board"></div>
+        </div>
+        <div class="col-xs-3 history-container">
+          <table class="table table-striped table-bordered table-hover" id="notes-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>White</th>
+                <th>Black</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+    <script src="/javascripts/chessboard-0.3.0.js"></script>
+    <script src="/javascripts/chessboard-0.3.0.min.js"></script>
+    <script src="/javascripts/chess.js"></script>
+     <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/javascripts/socket-server-side.js"></script>
+    <script type="text/javascript" src="/javascripts/socket-server-side.js"></script>
+    <script type="text/javascript" src="/javascripts/angular-controller.js"></script>
+    <script type="text/javascript" src="/javascripts/chess-logic.js"></script>
   </body>
 </html>
